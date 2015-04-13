@@ -1,0 +1,61 @@
+import javax.swing.JOptionPane;
+public class CarModifying {
+	public static void main(String [] args) {
+			String customColor, customType, customHP, customEngineSize;
+					double engineSize, HP ;
+							
+
+									Car customCar = new Car();
+											JOptionPane.showMessageDialog(null, "Enter the following components required to customize your car.");
+													customColor = JOptionPane.showInputDialog("What Color?.");
+															customType = JOptionPane.showInputDialog("What Brand?.");
+																	customHP = JOptionPane.showInputDialog("How much Horse Power?");
+																			HP = Double.parseDouble(customHP);
+																					customEngineSize = JOptionPane.showInputDialog("What engine size?");
+																							engineSize = Double.parseDouble(customEngineSize);
+																									
+																											JOptionPane.showMessageDialog(null, "Customized Car" + "\n" +"Car type: " + customType + "\n" + "Color: " + customColor + "\n" + "Horse Power: " + HP + "HP" + "\n" + "Engine Size: " + engineSize + "L");
+																													customCar.setColor(customColor);
+																															customCar.setEngineSize(engineSize);
+																																	customCar.setHorsePower(HP);
+																																			customCar.setMake(customType);
+																																					
+																																							JOptionPane.showMessageDialog(null, customCar);
+																																									
+																																											Car myCar1 = new Car();
+																																													myCar1.setColor("Black");
+																																															myCar1.setEngineSize(4.0);
+																																																	myCar1.setHorsePower(345);
+																																																			myCar1.setMake("Ford");
+																																																					
+																																																							JOptionPane.showMessageDialog(null, myCar1);
+																																																									
+																																																											Car myCar2 = new Car();
+																																																													myCar2.setColor("White");
+																																																															myCar2.setEngineSize(6.0);
+																																																																	myCar2.setHorsePower(625);
+																																																																			myCar2.setMake("Chevy");
+																																																																					
+																																																																							JOptionPane.showMessageDialog(null, myCar2);
+																																																																									
+																																																																											Car myCar3 = new Car();
+																																																																													myCar3.setColor("Red");
+																																																																															myCar3.setEngineSize(5.0);
+																																																																																	myCar3.setHorsePower(495);
+																																																																																			myCar3.setMake("Dodge");
+																																																																																					
+																																																																																							JOptionPane.showMessageDialog(null, myCar3);
+																																																																																									
+																																																																																											Car myCar4 = new Car();
+																																																																																													myCar4.setColor(customColor);
+																																																																																															myCar4.setEngineSize(engineSize);
+																																																																																																	myCar4.setHorsePower();
+																																																																																																			myCar4.setMake(customType);
+																																																																																																					
+																																																																																																							JOptionPane.showMessageDialog(null, myCar4);
+																																																																																																									
+																																																																																																											JOptionPane.showMessageDialog(null, "Compare custom car and my car : " + customCar.equals(myCar4));
+																																																																																																													
+																																																																																																														}
+																																																																																																														}
+
