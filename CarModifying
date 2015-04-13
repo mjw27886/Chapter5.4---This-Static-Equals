@@ -55,6 +55,6 @@ public class CarModifying {
 		JOptionPane.showMessageDialog(null, myCar4);
 		
 		JOptionPane.showMessageDialog(null, "Compare custom car and my car : " + customCar.equals(myCar4));
-		
+	
 }
 }
